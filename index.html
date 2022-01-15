@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bier ST</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+  <script src="scripts/vue.js"></script>
+ 
+
+</head>
+
+<body>
+  <div class="contenedorpcpal" v-cloak>
+
+
+
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+    
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"><span>+54 9 11 2672 2296</span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-4"><span> Lunes-Sabado: 11AM - 23PM</span></i>
+        </div>
+    
+    
+      </div>
+    </div>
+    
+      <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><router-link to="/" exact>Bier ST</router-link></h1>
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><router-link to="/" exact>Home</router-link></li>
+              <li><router-link to="/acerca" exact>Acerca</router-link></li>
+              <li><router-link to="/unicos" exact>Unicos</router-link></li>
+              <li><router-link to="/menu" exact>Menu</router-link></li>
+              <li><router-link to="/cheff" exact>Chefs</router-link></li>
+              <li><router-link to="/galeria" exact>Galeria</router-link></li>
+              <li><router-link to="/contactos" exact>Contacto</router-link></li>
+            </ul>
+           
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <router-link to="/reserva" exact class="book-a-table-btn scrollto d-none d-lg-flex">Reserve una mesa</router-link></li>
+        </div>
+      </header>
+
+
+      <router-view></router-view>
+    
+
+
+  </div>
+
+
+
+
+
+  <!-- SCRIPTS -->
+
+
+	<script src="scripts/router/vue-router.js"></script>
+  <script src="scripts/router/rutas.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/about.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/formulario.js"></script>
+  <script src="scripts/chefs.js"></script>
+  <script src="scripts/servicios.js"></script>
+  <script src="scripts/galeria.js"></script>
+
+</body>
+
+</html>
+
