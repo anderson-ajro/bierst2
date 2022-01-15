@@ -1,5 +1,6 @@
 Vue.component('services-st',{
 	props: ['numero','title','ctd'],
+	name:'unicos',
 	template:`
 	<div class="box">
 	<span>{{numero}}</span>

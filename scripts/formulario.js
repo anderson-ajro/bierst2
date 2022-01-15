@@ -48,7 +48,7 @@ template:`
 
 	
 	<div class="col-lg-4 col-md-6 form-group mt-3">
-		<input type="date" id="start" name="reserva" v-model="reserva" value="2018-07-22" min="2021-05-24" max="2021-05-31">
+		<input type="date" id="start" name="reserva" v-model="reserva" value="2018-07-22" min="2021-07-03" max="2021-07-31">
 		<div class="validate"></div>
 	</div>
 		
@@ -93,15 +93,25 @@ template:`
  		</div>
 
 		<div v-if="this.arr.length > 0" >
-			<h2>Detalles de Reserva</h2>
 				<ul v-for="item in arr" >
-					<li >
-					{{item.name}}</li>
-					<li>{{item.phone}}</li>
-					<li>{{item.reserva}}</li>
-					<li>{{item.seleccion}}</li>
-					<li>{{item.personas}} personas</li>
+				<div class="card"  style="width: 20rem;">
+  <img class="card-img-top" src="assets/img/qr-ubicacion.png" alt="codigo QR">
+  <div class="card-body reservacion">
+    <h5 class="card-title">Detalle de la reserva</h5>
+	<ul v-for="item in arr" >
+					<li >Reserva a nombre de: {{item.name}}</li>
+					<li>Telefono de contacto: {{item.phone}}</li>
+					<li>Día de reserva: {{item.reserva}}</li>
+					<li>Horario: {{item.seleccion}}</li>
+					<li>Cantidad de personas: {{item.personas}} personas</li>
 				</ul>
+				<router-link to="/contactos"   class="btn-book-1" exact>Ubicación Bier ST</router-link>
+  </div>
+</div>
+</ul>
+
+
+
 
 
 	
